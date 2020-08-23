@@ -1,0 +1,15 @@
+{
+  "name": "szkiba.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Iván Szkiba's resume",
+  "scripts": {
+    "build": "resume export --theme elegant --format html index.html"
+  },
+  "author": "Iván Szkiba",
+  "license": "MIT",
+  "devDependencies": {
+    "jsonresume-theme-elegant": "^1.13.2",
+    "resume-cli": "^1.2.8"
+  }
+}
