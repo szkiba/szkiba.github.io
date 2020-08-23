@@ -32,6 +32,11 @@
         "network": "LinkedIn",
         "url": "https://www.linkedin.com/in/szkiba",
         "username": "szkiba"
+      },
+      {
+        "network": "Twitter",
+        "url": "https://twitter.com/szkiba",
+        "username": "szkiba"
       }
     ]
   },
@@ -169,10 +174,7 @@
       "summary": "",
       "isCurrentRole": true,
       "startDate": "2017-08-01",
-      "start": {
-        "year": 2017,
-        "month": 8
-      },
+      "start": { "year": 2017, "month": 8 },
       "end": {},
       "highlights": [
         "System architect of navigation services",
@@ -192,14 +194,8 @@
       "isCurrentRole": false,
       "startDate": "2014-05-01",
       "endDate": "2017-07-01",
-      "start": {
-        "year": 2014,
-        "month": 5
-      },
-      "end": {
-        "year": 2017,
-        "month": 7
-      },
+      "start": { "year": 2014, "month": 5 },
+      "end": { "year": 2017, "month": 7 },
       "highlights": [
         "System Architect of navigation related Enterprise Java development projects",
         "Leading the architecture team (3 java architects)",
@@ -221,14 +217,8 @@
       "isCurrentRole": false,
       "startDate": "2007-04-01",
       "endDate": "2014-04-01",
-      "start": {
-        "year": 2007,
-        "month": 4
-      },
-      "end": {
-        "year": 2014,
-        "month": 4
-      },
+      "start": { "year": 2007, "month": 4 },
+      "end": { "year": 2014, "month": 4 },
       "highlights": [
         "Leading the development team (15 java programmers)",
         "Supervising the system administrator team (3 system administrators)",
@@ -249,14 +239,8 @@
       "isCurrentRole": false,
       "startDate": "2001-06-01",
       "endDate": "2007-03-01",
-      "start": {
-        "year": 2001,
-        "month": 6
-      },
-      "end": {
-        "year": 2007,
-        "month": 3
-      },
+      "start": { "year": 2001, "month": 6 },
+      "end": { "year": 2007, "month": 3 },
       "highlights": [
         "Architect and technical lead of Bonus.com development (was a popular kid web site in US)",
         "Technical leader of development team (6-10 java developers)",
@@ -276,14 +260,8 @@
       "isCurrentRole": false,
       "startDate": "1998-03-01",
       "endDate": "2001-05-01",
-      "start": {
-        "year": 1998,
-        "month": 3
-      },
-      "end": {
-        "year": 2001,
-        "month": 5
-      },
+      "start": { "year": 1998, "month": 3 },
+      "end": { "year": 2001, "month": 5 },
       "highlights": [
         "Developing key software components of Bonus.com (was a popular kid web site in US)",
         "Operation of 6-8 production servers (Solaris, Digital Unix, Linux) and several staging server",
@@ -301,14 +279,8 @@
       "isCurrentRole": false,
       "startDate": "1996-09-01",
       "endDate": "1998-02-01",
-      "start": {
-        "year": 1996,
-        "month": 9
-      },
-      "end": {
-        "year": 1998,
-        "month": 2
-      },
+      "start": { "year": 1996, "month": 9 },
+      "end": { "year": 1998, "month": 2 },
       "highlights": [
         "Developed software components of Bonus.com (was a popular kid web site in US)",
         "(C/C++, HTML, CSS)"
@@ -323,14 +295,8 @@
       "isCurrentRole": false,
       "startDate": "1996-09-01",
       "endDate": "1998-02-01",
-      "start": {
-        "year": 1996,
-        "month": 9
-      },
-      "end": {
-        "year": 1998,
-        "month": 2
-      },
+      "start": { "year": 1996, "month": 9 },
+      "end": { "year": 1998, "month": 2 },
       "highlights": [
         "Developed and administered company internal network and production web servers",
         "Design and implementation of company internet services and connections",
@@ -349,14 +315,8 @@
       "isCurrentRole": false,
       "startDate": "1991-08-01",
       "endDate": "1996-08-01",
-      "start": {
-        "year": 1991,
-        "month": 8
-      },
-      "end": {
-        "year": 1996,
-        "month": 8
-      },
+      "start": { "year": 1991, "month": 8 },
+      "end": { "year": 1996, "month": 8 },
       "highlights": [
         "I taught programming languages (C/C++ and x86 assembly), object oriented programming and computer networks for programmers.",
         "(C/C++, x86 assembly, TCP/IP, Novell NetWare)"
@@ -372,14 +332,8 @@
       "website": "",
       "startDate": "1988-09-01",
       "endDate": "1991-06-01",
-      "start": {
-        "year": 1988,
-        "month": 9
-      },
-      "end": {
-        "year": 1991,
-        "month": 6
-      },
+      "start": { "year": 1988, "month": 9 },
+      "end": { "year": 1991, "month": 6 },
       "description": "",
       "activities": "",
       "gpa": "",
@@ -392,14 +346,8 @@
       "website": "",
       "startDate": "1986-09-01",
       "endDate": "1991-06-01",
-      "start": {
-        "year": 1986,
-        "month": 9
-      },
-      "end": {
-        "year": 1991,
-        "month": 6
-      },
+      "start": { "year": 1986, "month": 9 },
+      "end": { "year": 1991, "month": 6 },
       "description": "",
       "activities": "",
       "gpa": "",
