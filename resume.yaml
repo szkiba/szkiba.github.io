@@ -1,0 +1,238 @@
+$schema: https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
+basics:
+  name: Iván Szkiba
+  image: https://avatars3.githubusercontent.com/u/16244553?v=4
+  label: Software Engineer
+  headline: Becoming (a good) programmer is an endless adventure
+  summary: I'm a software engineer who wants to be a craftsman in his profession one day.
+  url: https://ivan.szkiba.hu
+  id: 38bb3b0e-597d-45f8-b272-90bd64df18f8
+  email: ivan@szkiba.hu
+  location:
+    address: Czipri Bíró 10
+    postalCode: "2051"
+    city: Biatorbágy
+    countryCode: HU
+  phone: +36 30 7773532
+  followers: 0
+  following: 0
+  profiles:
+    - network: GitHub
+      username: szkiba
+      url: https://github.com/szkiba
+    - network: LinkedIn
+      url: https://www.linkedin.com/in/szkiba
+      username: szkiba
+    - network: Twitter
+      url: https://twitter.com/szkiba
+      username: szkiba
+skills:
+  - name: Go
+    level: master
+    keywords: []
+  - name: JavaScript
+    level: master
+    keywords: []
+  - name: Java
+    level: master
+    keywords: []
+  - name: Microservices
+    level: advanced
+    keywords: []
+  - name: Databases
+    level: advanced
+    keywords: []
+  - name: HTML/CSS
+    level: advanced
+    keywords: []
+  - name: Dart
+    level: intermediate
+    keywords: []
+  - name: Rust
+    level: beginner
+    keywords: []
+work:
+  - name: NNG LLC
+    position: System Architect
+    url: https://www.nng.com
+    location: Budapest, Hungary
+    summary: ""
+    startDate: 2017-08-01
+    highlights:
+      - System architect of navigation services
+      - Support and coach software architects
+      - Architect authentication/authorization/licensing related development
+      - Lead by example in software development, automated testing, documenting
+      - Evaluating and selecting technologies to use
+      - (Go, JavaScript, Java, HTML, CSS)
+  - name: NNG LLC
+    position: Head of Cloud Competence Center (interim role)
+    url: https://www.nng.com
+    location: Budapest, Hungary
+    summary: ""
+    startDate: 2022-07-01
+    endDate: 2023-03-01
+    highlights:
+      - Leader of 4 Engineering Managers (4 developer teams, 2 operation teams)
+      - Support and coach Engineering Managers
+      - Emphasis on Software Engineering
+      - Supporting the recruitment of a successor
+  - name: NNG LLC
+    position: Lead Software Architect
+    url: https://www.nng.com
+    location: Budapest, Hungary
+    summary: ""
+    startDate: 2014-05-01
+    endDate: 2017-07-01
+    highlights:
+      - System Architect of navigation related Enterprise Java development
+        projects
+      - Leading the architecture team (3 java architects)
+      - Technical leader of 18 java developers and 3 test automation developers
+      - Evaluating and selecting new technologies
+      - Making technology related decisions
+      - Recruiting new java developers
+      - Managing code quality (measure, create quality profiles)
+      - Introduction of Continuous Delivery
+      - (J2EE, JavaScript, HTML, CSS, REST, Maven, SVN, Ant, Struts, Linux,
+        PostgreSQL, Apache httpd, Jenkins, Sonar, JUnit, EasyMock, Mockito,
+        JaCoCo, ANTLR)
+  - name: NNG LLC
+    position: Head of Platform Development
+    url: https://www.nng.com
+    location: Budapest, Hungary
+    summary: ""
+    startDate: 2007-04-01
+    endDate: 2014-04-01
+    highlights:
+      - Formation of server-side development teams
+      - Leading the development team (15 java programmers)
+      - Supervising the system administrator team (3 system administrators)
+      - Designing system architecture
+      - Evaluating and selecting technologies to use
+      - Recruiting new java developers
+      - Cooperating with project managers in a matrix structure
+      - Making technology related decisions
+      - (J2EE, JavaScript, HTML, CSS, REST, Maven, SVN, Ant, Struts, Linux,
+        PostgreSQL, Apache httpd, Jenkins, Sonar, JUnit, EasyMock, Mockito,
+        JaCoCo, ANTLR)
+  - name: Bonus Online Ltd
+    position: Head of Development
+    location: Budapest, Hungary
+    summary: ""
+    isCurrentRole: false
+    startDate: 2001-06-01
+    endDate: 2007-03-01
+    highlights:
+      - Architect and technical lead of Bonus.com development (was a popular kid
+        web site in US)
+      - Technical leader of development team (6-10 java developers)
+      - Technical leader of system administrator team (2 Unix administrators)
+      - Creating system architecture (web, geographic DNS based load balancer,
+        database)
+      - Recruiting new team members
+      - Making technology related decisions
+      - (Java Servlets, Tomcat, Apache httpd, MySQL, CVS, Ant, Struts, JSP,
+        HTML, CSS, JavaScript)
+  - name: Bonus Online Ltd
+    position: Lead Software Developer
+    location: Budapest, Hungary
+    summary: ""
+    startDate: 1998-03-01
+    endDate: 2001-05-01
+    highlights:
+      - Developing key software components of Bonus.com (was a popular kid web
+        site in US)
+      - Operation of 6-8 production servers (Solaris, Digital Unix, Linux) and
+        several staging server
+      - Managing network and server security, firewalls
+      - Maintaining company email system
+      - (C/C++, Java Applets, PHP, Python, Unix shell scripts, RPM, APT, Digital
+        Unix, Sun Solaris, Linux, FreeBSD)
+  - name: Bonus Online Ltd
+    position: Software Developer
+    location: Budapest, Hungary
+    summary: ""
+    startDate: 1996-09-01
+    endDate: 1998-02-01
+    highlights:
+      - Developed software components of Bonus.com (was a popular kid web site
+        in US)
+      - (C/C++, HTML, CSS)
+  - name: Bonus Online Ltd
+    position: Unix System Administrator
+    location: Budapest, Hungary
+    summary: ""
+    startDate: 1996-09-01
+    endDate: 1998-02-01
+    highlights:
+      - Developed and administered company internal network and production web
+        servers
+      - Design and implementation of company internet services and connections
+      - Design and implementation of network firewalls for company and for
+        production servers
+      - Installation and operation of several different Unix systems
+      - Managing network and server security
+      - (Digital Unix, Linux, Cisco routers, Unix shell scripts, HTTP, SMTP,
+        DNS, NTP, SSH, SSL, DHCP)
+  - name: University of Debrecen (UD)
+    position: Assistant lecturer
+    url: https://unideb.hu/en
+    location: Debrecen, Hungary
+    summary: ""
+    isCurrentRole: false
+    startDate: 1991-08-01
+    endDate: 1996-08-01
+    highlights:
+      - I taught programming languages (C/C++ and x86 assembly), object oriented
+        programming and computer networks for programmers.
+      - (C/C++, x86 assembly, TCP/IP, Novell NetWare)
+projects:
+  - name: muxpress - Express.js like micro web framework for goja
+    url: http://ivan.szkiba.hu/muxpress/
+
+  - name: xk6-dashboard - A k6 extension that enables creating web based metrics dashboard for k6.
+    url: https://github.com/szkiba/xk6-dashboard
+
+  - name: xk6-prometheus - A k6 extension implements Prometheus HTTP exporter as k6 output extension.
+    url: https://github.com/szkiba/xk6-prometheus
+
+  - name: xk6bundler - A CLI tool and GitHub Action makes bundle k6 with extensions as fast and easily as possible.
+    url: https://github.com/szkiba/xk6bundler
+
+  - name: xk6-top - A k6 extension to updating the current k6 metrics summaries on the terminal during the test run.
+    url: https://github.com/szkiba/xk6-top
+
+  - name: xk6-mock -A k6 extension enables mocking HTTP(S) servers during test development.
+    url: https://ivan.szkiba.hu/xk6-mock
+
+  - name: ini4j - java api for handling windows ini file format
+    url: https://ini4j.sourceforge.net/
+
+  - name: Production Information System for Kaba Sugar Factory
+    summary: Probably it was one of the first intranet applications, but at that
+      time the term intranet was not introduced yet.
+education:
+  - institution: University of Debrecen
+    studyType: Bachelor's Degree, Computer Programming
+    url: https://unideb.hu/en
+    startDate: 1988-09-01
+    endDate: 1991-06-01
+  - institution: University of Debrecen
+    studyType: Master of Science (MSc), Mathematics and Physics Teacher Education
+    url: https://unideb.hu/en
+    startDate: 1986-09-01
+    endDate: 1991-06-01
+languages:
+  - language: English
+    fluency: fluent
+  - language: Hungarian
+    fluency: native speaker
+publications: []
+volunteer: []
+awards: []
+interests:
+  - name: blues music
+  - name: play the harmonica
+  - name: hiking
+references: []

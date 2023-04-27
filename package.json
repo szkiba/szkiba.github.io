@@ -1,15 +1,17 @@
 {
   "name": "szkiba.github.io",
   "private": true,
+  "type": "module",
   "version": "1.0.0",
   "description": "Iván Szkiba's resume",
   "scripts": {
-    "build": "resume export --theme elegant --format html index.html"
+    "build": "node build.js"
   },
   "author": "Iván Szkiba",
-  "license": "MIT",
   "devDependencies": {
-    "jsonresume-theme-elegant": "^1.13.2",
-    "resume-cli": "^1.2.8"
+    "jsonresume-theme-stackoverflow": "^2.0.1",
+    "resumed": "^3.0.1",
+    "yaml": "^2.2.2",
+    "puppeteer": "^19.11.1"
   }
 }
