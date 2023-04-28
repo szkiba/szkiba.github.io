@@ -9,9 +9,7 @@ basics:
   id: 38bb3b0e-597d-45f8-b272-90bd64df18f8
   email: ivan@szkiba.hu
   location:
-    address: Czipri Bíró 10
-    postalCode: "2051"
-    city: Biatorbágy
+    region: Budapest Metropolitan Area
     countryCode: HU
   phone: +36 30 7773532
   followers: 0
