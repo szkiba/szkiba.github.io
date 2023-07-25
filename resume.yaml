@@ -50,12 +50,22 @@ skills:
     level: beginner
     keywords: []
 work:
+  - name: Grafana Labs
+    position: Senior Software Engineer II
+    url: https://www.grafana.com
+    location: Hungary
+    summary: ""
+    startDate: 2023-07-25
+    highlights:
+      - Member of k6 Ecosystem Team
+      - (Go, JavaScript, React, HTML, CSS)
   - name: NNG LLC
     position: System Architect
     url: https://www.nng.com
     location: Budapest, Hungary
     summary: ""
     startDate: 2017-08-01
+    endDate: 2023-07-07
     highlights:
       - System architect of navigation services
       - Support and coach software architects
@@ -186,6 +196,12 @@ work:
         programming and computer networks for programmers.
       - (C/C++, x86 assembly, TCP/IP, Novell NetWare)
 projects:
+  - name: xk6-g0 - Write k6 tests in golang.
+    url: https://github.com/szkiba/xk6-g0
+
+  - name: xk6-output-plugin - Write k6 output extension as a dynamically loadable plugin using your favorite programming language.
+    url: https://github.com/szkiba/xk6-output-plugin
+
   - name: muxpress - Express.js like micro web framework for goja
     url: http://ivan.szkiba.hu/muxpress/
 
