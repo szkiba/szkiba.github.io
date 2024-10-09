@@ -57,7 +57,7 @@ work:
     summary: ""
     startDate: 2023-07-25
     highlights:
-      - Member of k6 Ecosystem Team
+      - Member of k6 Extension and Tooling Team
       - (Go, JavaScript, React, HTML, CSS)
   - name: NNG LLC
     position: System Architect
@@ -196,29 +196,20 @@ work:
         programming and computer networks for programmers.
       - (C/C++, x86 assembly, TCP/IP, Novell NetWare)
 projects:
-  - name: xk6-g0 - Write k6 tests in golang.
-    url: https://github.com/szkiba/xk6-g0
+  - name: cdo - Markdown-based task runner for contributors
+    url: https://github.com/szkiba/cdo
 
-  - name: xk6-output-plugin - Write k6 output extension as a dynamically loadable plugin using your favorite programming language.
-    url: https://github.com/szkiba/xk6-output-plugin
+  - name: mdcode - Markdown code block authoring tool
+    url: https://github.com/szkiba/mdcode
+
+  - name: k6i2n - Custom k6 distribution with Iván Szkiba's k6 extensions
+    url: https://github.com/szkiba/k6i2n
 
   - name: muxpress - Express.js like micro web framework for goja
     url: http://ivan.szkiba.hu/muxpress/
 
-  - name: xk6-dashboard - A k6 extension that enables creating web based metrics dashboard for k6.
-    url: https://github.com/szkiba/xk6-dashboard
-
-  - name: xk6-prometheus - A k6 extension implements Prometheus HTTP exporter as k6 output extension.
-    url: https://github.com/szkiba/xk6-prometheus
-
   - name: xk6bundler - A CLI tool and GitHub Action makes bundle k6 with extensions as fast and easily as possible.
     url: https://github.com/szkiba/xk6bundler
-
-  - name: xk6-top - A k6 extension to updating the current k6 metrics summaries on the terminal during the test run.
-    url: https://github.com/szkiba/xk6-top
-
-  - name: xk6-mock -A k6 extension enables mocking HTTP(S) servers during test development.
-    url: https://ivan.szkiba.hu/xk6-mock
 
   - name: ini4j - java api for handling windows ini file format
     url: https://ini4j.sourceforge.net/
