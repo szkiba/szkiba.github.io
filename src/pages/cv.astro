@@ -1,0 +1,118 @@
+---
+import ContactLinks from "../components/ContactLinks.astro";
+import Section from "../components/Section.astro";
+import Base from "../layouts/Base.astro";
+import { formatRange, formatYearRange, groupByEmployer, resume, splitHighlights, splitProject } from "../lib/resume";
+
+const { basics, work, projects, skills, education, languages, interests } = resume;
+---
+
+<Base title={`CV · ${basics.name}`} description={`Curriculum vitae of ${basics.name}, ${basics.label}.`}>
+  <div class="cv-header">
+    <div>
+      <h1>{basics.name}</h1>
+      <p class="label">{basics.label}</p>
+      {basics.location?.region && <p class="muted">{basics.location.region}</p>}
+    </div>
+    <a class="button" href="/resume.pdf" download>Download PDF</a>
+  </div>
+  <ContactLinks />
+
+  {basics.summary && <p class="lead">{basics.summary}</p>}
+
+  <Section title="Experience">
+    {
+      groupByEmployer(work).map((employer) => (
+        <article class="employer">
+          <h3>
+            {employer.url ? <a href={employer.url}>{employer.name}</a> : employer.name}
+            {employer.location && <span class="muted"> · {employer.location}</span>}
+          </h3>
+          {employer.roles.map((role) => {
+            const { items, tech } = splitHighlights(role.highlights);
+            return (
+              <div class="role">
+                <div class="role-title">
+                  <h4>{role.position}</h4>
+                  <time datetime={role.startDate}>{formatRange(role.startDate, role.endDate)}</time>
+                </div>
+                {role.summary && <p>{role.summary}</p>}
+                {items.length > 0 && (
+                  <ul>
+                    {items.map((h) => (
+                      <li>{h}</li>
+                    ))}
+                  </ul>
+                )}
+                {tech.length > 0 && <p class="tech">{tech.join(", ")}</p>}
+              </div>
+            );
+          })}
+        </article>
+      ))
+    }
+  </Section>
+
+  <Section title="Projects">
+    <ul class="projects">
+      {
+        projects.map((p) => {
+          const { title, description } = splitProject(p);
+          return (
+            <li>
+              {p.url ? <a href={p.url}>{title}</a> : <strong>{title}</strong>}
+              {description && <span class="muted"> — {description}</span>}
+            </li>
+          );
+        })
+      }
+    </ul>
+  </Section>
+
+  <Section title="Skills">
+    <ul class="tags">
+      {
+        skills.map((s) => (
+          <li>
+            {s.name}
+            {s.level && <span class="muted"> · {s.level}</span>}
+          </li>
+        ))
+      }
+    </ul>
+  </Section>
+
+  <Section title="Education">
+    {
+      education.map((e) => (
+        <div class="role">
+          <div class="role-title">
+            <h4>{e.studyType}</h4>
+            <time datetime={e.startDate}>{formatYearRange(e.startDate, e.endDate)}</time>
+          </div>
+          <p>{e.url ? <a href={e.url}>{e.institution}</a> : e.institution}</p>
+        </div>
+      ))
+    }
+  </Section>
+
+  <div class="columns">
+    <Section title="Languages">
+      <ul class="plain">
+        {
+          languages.map((l) => (
+            <li>
+              {l.language} <span class="muted">· {l.fluency}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </Section>
+
+    <Section title="Interests">
+      <ul class="plain">
+        {interests.map((i) => <li>{i.name}</li>)}
+      </ul>
+    </Section>
+  </div>
+</Base>

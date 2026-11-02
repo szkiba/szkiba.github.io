@@ -1,0 +1,62 @@
+---
+import ContactLinks from "../components/ContactLinks.astro";
+import Section from "../components/Section.astro";
+import Base from "../layouts/Base.astro";
+import { resume, splitHighlights, splitProject } from "../lib/resume";
+
+const { basics, work, projects } = resume;
+const current = work.find((w) => !w.endDate);
+const selected = projects.filter((p) => p.url).slice(0, 5);
+---
+
+<Base title={`${basics.name} · ${basics.label}`} description={basics.summary ?? basics.label}>
+  <div class="intro">
+    {basics.image && <img class="avatar" src={basics.image} alt="" width="128" height="128" />}
+    <div>
+      <h1>{basics.name}</h1>
+      <p class="label">{basics.label}</p>
+      {basics.headline && <p class="headline">{basics.headline}</p>}
+    </div>
+  </div>
+
+  {basics.summary && <p class="lead">{basics.summary}</p>}
+
+  {
+    current && (
+      <Section title="Currently">
+        <p>
+          {current.position} at {current.url ? <a href={current.url}>{current.name}</a> : current.name}
+        </p>
+        <ul>
+          {splitHighlights(current.highlights).items.map((h) => (
+            <li>{h}</li>
+          ))}
+        </ul>
+      </Section>
+    )
+  }
+
+  <Section title="Selected projects">
+    <ul class="projects">
+      {
+        selected.map((p) => {
+          const { title, description } = splitProject(p);
+          return (
+            <li>
+              <a href={p.url}>{title}</a>
+              {description && <span class="muted"> — {description}</span>}
+            </li>
+          );
+        })
+      }
+    </ul>
+    <p><a href="/cv/#projects">All projects →</a></p>
+  </Section>
+
+  <Section title="Elsewhere">
+    <ContactLinks />
+    <p>
+      Read the full <a href="/cv/">CV</a> or download it as a <a href="/resume.pdf">PDF</a>.
+    </p>
+  </Section>
+</Base>

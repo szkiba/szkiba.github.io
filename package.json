@@ -2,16 +2,22 @@
   "name": "szkiba.github.io",
   "private": true,
   "type": "module",
-  "version": "1.0.0",
-  "description": "Iván Szkiba's resume",
-  "scripts": {
-    "build": "node build.js"
-  },
+  "version": "2.0.0",
+  "description": "Iván Szkiba's personal website and resume",
   "author": "Iván Szkiba",
-  "devDependencies": {
-    "jsonresume-theme-stackoverflow": "^2.0.1",
-    "resumed": "^3.0.1",
-    "yaml": "^2.2.2",
-    "puppeteer": "^19.11.1"
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "pdf": "typst compile --root . --ignore-system-fonts cv/resume.typ public/resume.pdf",
+    "pdf:watch": "typst watch --root . --ignore-system-fonts cv/resume.typ public/resume.pdf",
+    "dev": "npm run pdf && astro dev",
+    "build": "npm run pdf && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.3.8",
+    "yaml": "2.9.1"
   }
 }
