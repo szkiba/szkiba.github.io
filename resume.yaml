@@ -1,19 +1,16 @@
 $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
 basics:
   name: Iván Szkiba
-  image: https://avatars3.githubusercontent.com/u/16244553?v=4
-  label: Software Engineer
+  image: /avatar.png
+  label: Staff Software Engineer
   headline: Becoming (a good) programmer is an endless adventure
-  summary: I'm a software engineer who wants to be a craftsman in his profession one day.
+  summary: Staff Software Engineer on the Grafana k6 core team, focused on k6 extensions, the extension ecosystem and tooling. Over 25 years of building and architecting backend systems in Go, Java and JavaScript.
   url: https://ivan.szkiba.hu
   id: 38bb3b0e-597d-45f8-b272-90bd64df18f8
   email: ivan@szkiba.hu
   location:
     region: Budapest Metropolitan Area
     countryCode: HU
-  phone: +36 30 7773532
-  followers: 0
-  following: 0
   profiles:
     - network: GitHub
       username: szkiba
@@ -21,8 +18,8 @@ basics:
     - network: LinkedIn
       url: https://www.linkedin.com/in/szkiba
       username: szkiba
-    - network: Twitter
-      url: https://twitter.com/szkiba
+    - network: X
+      url: https://x.com/szkiba
       username: szkiba
 skills:
   - name: Go
@@ -31,8 +28,17 @@ skills:
   - name: JavaScript
     level: master
     keywords: []
-  - name: Java
+  - name: TypeScript
+    level: advanced
+    keywords: []
+  - name: k6
     level: master
+    keywords: []
+  - name: Open source maintainership
+    level: advanced
+    keywords: []
+  - name: Java
+    level: advanced
     keywords: []
   - name: Microservices
     level: advanced
@@ -43,22 +49,17 @@ skills:
   - name: HTML/CSS
     level: advanced
     keywords: []
-  - name: Dart
-    level: intermediate
-    keywords: []
-  - name: Rust
-    level: beginner
-    keywords: []
 work:
   - name: Grafana Labs
-    position: Senior Software Engineer II
+    position: Staff Software Engineer
     url: https://www.grafana.com
     location: Hungary
     summary: ""
     startDate: 2023-07-25
     highlights:
-      - Member of k6 Extension and Tooling Team
-      - (Go, JavaScript, React, HTML, CSS)
+      - Member of the k6 core team
+      - Maintain and evolve the k6 extension ecosystem and tooling
+      - (Go, JavaScript, TypeScript, React, HTML, CSS)
   - name: NNG LLC
     position: System Architect
     url: https://www.nng.com
@@ -68,23 +69,22 @@ work:
     endDate: 2023-07-07
     highlights:
       - System architect of navigation services
-      - Support and coach software architects
-      - Architect authentication/authorization/licensing related development
-      - Lead by example in software development, automated testing, documenting
-      - Evaluating and selecting technologies to use
+      - Supporting and coaching software architects
+      - Architecting authentication, authorization and licensing related development
+      - Leading by example in software development, automated testing and documentation
+      - Evaluating and selecting technologies
       - (Go, JavaScript, Java, HTML, CSS)
   - name: NNG LLC
-    position: Head of Cloud Competence Center (interim role)
+    position: Head of Cloud Competence Center (interim, concurrent role)
     url: https://www.nng.com
     location: Budapest, Hungary
     summary: ""
     startDate: 2022-07-01
     endDate: 2023-03-01
     highlights:
-      - Leader of 4 Engineering Managers (4 developer teams, 2 operation teams)
-      - Support and coach Engineering Managers
-      - Emphasis on Software Engineering
-      - Supporting the recruitment of a successor
+      - Led 4 Engineering Managers (4 developer teams, 2 operation teams)
+      - Supporting and coaching Engineering Managers, with emphasis on Software Engineering
+      - Supported the recruitment of a successor
   - name: NNG LLC
     position: Lead Software Architect
     url: https://www.nng.com
@@ -93,18 +93,12 @@ work:
     startDate: 2014-05-01
     endDate: 2017-07-01
     highlights:
-      - System Architect of navigation related Enterprise Java development
-        projects
-      - Leading the architecture team (3 java architects)
-      - Technical leader of 18 java developers and 3 test automation developers
-      - Evaluating and selecting new technologies
-      - Making technology related decisions
-      - Recruiting new java developers
-      - Managing code quality (measure, create quality profiles)
-      - Introduction of Continuous Delivery
-      - (J2EE, JavaScript, HTML, CSS, REST, Maven, SVN, Ant, Struts, Linux,
-        PostgreSQL, Apache httpd, Jenkins, Sonar, JUnit, EasyMock, Mockito,
-        JaCoCo, ANTLR)
+      - Architect of navigation related Enterprise Java development projects
+      - Led the architecture team (3 Java architects)
+      - Technical leader of 18 Java developers and 3 test automation developers
+      - Evaluated and selected new technologies, made technology related decisions
+      - Introduced Continuous Delivery and managed code quality
+      - (J2EE, JavaScript, REST, Maven, Struts, Linux, PostgreSQL, Jenkins, Sonar, ANTLR)
   - name: NNG LLC
     position: Head of Platform Development
     url: https://www.nng.com
@@ -113,35 +107,22 @@ work:
     startDate: 2007-04-01
     endDate: 2014-04-01
     highlights:
-      - Formation of server-side development teams
-      - Leading the development team (15 java programmers)
-      - Supervising the system administrator team (3 system administrators)
-      - Designing system architecture
-      - Evaluating and selecting technologies to use
-      - Recruiting new java developers
-      - Cooperating with project managers in a matrix structure
-      - Making technology related decisions
-      - (J2EE, JavaScript, HTML, CSS, REST, Maven, SVN, Ant, Struts, Linux,
-        PostgreSQL, Apache httpd, Jenkins, Sonar, JUnit, EasyMock, Mockito,
-        JaCoCo, ANTLR)
+      - Formed the server-side development teams
+      - Led the development team (15 Java programmers) and supervised the system administrator team (3 administrators)
+      - Designed the system architecture, evaluated and selected technologies
+      - Recruited new Java developers
+      - (J2EE, JavaScript, REST, Maven, SVN, Ant, Struts, Linux, PostgreSQL, Apache httpd, Jenkins)
   - name: Bonus Online Ltd
     position: Head of Development
     location: Budapest, Hungary
     summary: ""
-    isCurrentRole: false
     startDate: 2001-06-01
     endDate: 2007-03-01
     highlights:
-      - Architect and technical lead of Bonus.com development (was a popular kid
-        web site in US)
-      - Technical leader of development team (6-10 java developers)
-      - Technical leader of system administrator team (2 Unix administrators)
-      - Creating system architecture (web, geographic DNS based load balancer,
-        database)
-      - Recruiting new team members
-      - Making technology related decisions
-      - (Java Servlets, Tomcat, Apache httpd, MySQL, CVS, Ant, Struts, JSP,
-        HTML, CSS, JavaScript)
+      - Architect and technical lead of Bonus.com, a popular kids' website in the US
+      - Led the development team (6-10 Java developers) and the system administrator team (2 Unix administrators)
+      - Designed the system architecture (web, geographic DNS based load balancer, database)
+      - (Java Servlets, Tomcat, Apache httpd, MySQL, Struts, JSP, HTML, CSS, JavaScript)
   - name: Bonus Online Ltd
     position: Lead Software Developer
     location: Budapest, Hungary
@@ -149,74 +130,34 @@ work:
     startDate: 1998-03-01
     endDate: 2001-05-01
     highlights:
-      - Developing key software components of Bonus.com (was a popular kid web
-        site in US)
-      - Operation of 6-8 production servers (Solaris, Digital Unix, Linux) and
-        several staging server
-      - Managing network and server security, firewalls
-      - Maintaining company email system
-      - (C/C++, Java Applets, PHP, Python, Unix shell scripts, RPM, APT, Digital
-        Unix, Sun Solaris, Linux, FreeBSD)
+      - Developed key software components of Bonus.com
+      - Operated production and staging servers (Solaris, Digital Unix, Linux), managed network and server security, firewalls and the company email system
+      - (C/C++, Java Applets, PHP, Python, Unix shell scripts, Linux, FreeBSD)
   - name: Bonus Online Ltd
-    position: Software Developer
+    position: Software Developer and Unix System Administrator
     location: Budapest, Hungary
     summary: ""
     startDate: 1996-09-01
     endDate: 1998-02-01
     highlights:
-      - Developed software components of Bonus.com (was a popular kid web site
-        in US)
-      - (C/C++, HTML, CSS)
-  - name: Bonus Online Ltd
-    position: Unix System Administrator
-    location: Budapest, Hungary
-    summary: ""
-    startDate: 1996-09-01
-    endDate: 1998-02-01
-    highlights:
-      - Developed and administered company internal network and production web
-        servers
-      - Design and implementation of company internet services and connections
-      - Design and implementation of network firewalls for company and for
-        production servers
-      - Installation and operation of several different Unix systems
-      - Managing network and server security
-      - (Digital Unix, Linux, Cisco routers, Unix shell scripts, HTTP, SMTP,
-        DNS, NTP, SSH, SSL, DHCP)
+      - Developed software components of Bonus.com
+      - Designed and administered the company network, internet services, firewalls and production web servers
+      - (C/C++, HTML, CSS, Digital Unix, Linux, Cisco routers, HTTP, SMTP, DNS)
   - name: University of Debrecen (UD)
     position: Assistant lecturer
     url: https://unideb.hu/en
     location: Debrecen, Hungary
     summary: ""
-    isCurrentRole: false
     startDate: 1991-08-01
     endDate: 1996-08-01
     highlights:
-      - I taught programming languages (C/C++ and x86 assembly), object oriented
-        programming and computer networks for programmers.
-      - (C/C++, x86 assembly, TCP/IP, Novell NetWare)
+      - Taught programming languages (C/C++ and x86 assembly), object oriented programming and computer networks for programmers
 projects:
-  - name: cdo - Markdown-based task runner for contributors
-    url: https://github.com/szkiba/cdo
-
-  - name: mdcode - Markdown code block authoring tool
-    url: https://github.com/szkiba/mdcode
-
-  - name: k6i2n - Custom k6 distribution with Iván Szkiba's k6 extensions
-    url: https://github.com/szkiba/k6i2n
-
-  - name: muxpress - Express.js like micro web framework for goja
-    url: http://ivan.szkiba.hu/muxpress/
-
-  - name: xk6bundler - A CLI tool and GitHub Action makes bundle k6 with extensions as fast and easily as possible.
-    url: https://github.com/szkiba/xk6bundler
-
-  - name: ini4j - java api for handling windows ini file format
-    url: https://ini4j.sourceforge.net/
+  - name: ini4j - Java API for handling Windows ini file format
+    url: https://github.com/ini4j/ini4j
 
   - name: Production Information System for Kaba Sugar Factory
-    summary: Probably it was one of the first intranet applications, but at that
-      time the term intranet was not introduced yet.
+    summary: 1994-1998, during my last two years in Debrecen and first two years at Bonus. Probably one of the first intranet applications, but at that time the term intranet was not introduced yet.
 education:
   - institution: University of Debrecen
     studyType: Bachelor's Degree, Computer Programming
@@ -237,7 +178,7 @@ publications: []
 volunteer: []
 awards: []
 interests:
-  - name: blues music
-  - name: play the harmonica
-  - name: hiking
+  - name: Blues music
+  - name: Playing the harmonica
+  - name: Hiking
 references: []
