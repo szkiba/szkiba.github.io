@@ -2,7 +2,7 @@
 import ContactLinks from "../components/ContactLinks.astro";
 import Section from "../components/Section.astro";
 import Base from "../layouts/Base.astro";
-import { resume, splitHighlights, splitProject } from "../lib/resume";
+import { resume, splitHighlights } from "../lib/resume";
 
 const { basics, work, projects } = resume;
 const current = work.find((w) => !w.endDate);
@@ -40,11 +40,9 @@ const selected = projects.filter((p) => p.url).slice(0, 5);
     <ul class="projects">
       {
         selected.map((p) => {
-          const { title, description } = splitProject(p);
           return (
             <li>
-              <a href={p.url}>{title}</a>
-              {description && <span class="muted"> — {description}</span>}
+              <a href={p.url}>{p.name}</a>
             </li>
           );
         })

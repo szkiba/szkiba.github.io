@@ -2,7 +2,7 @@
 import ContactLinks from "../components/ContactLinks.astro";
 import Section from "../components/Section.astro";
 import Base from "../layouts/Base.astro";
-import { formatRange, formatYearRange, groupByEmployer, resume, splitHighlights, splitProject } from "../lib/resume";
+import { formatRange, formatYearRange, groupByEmployer, resume, splitHighlights } from "../lib/resume";
 
 const { basics, work, projects, skills, education, languages, interests } = resume;
 ---
@@ -57,12 +57,10 @@ const { basics, work, projects, skills, education, languages, interests } = resu
     <ul class="projects">
       {
         projects.map((p) => {
-          const { title, description, details } = splitProject(p);
           return (
             <li>
-              {p.url ? <a href={p.url}>{title}</a> : <strong>{title}</strong>}
-              {description && <span class="muted"> — {description}</span>}
-              {details && <p class="muted">{details}</p>}
+              {p.url ? <a href={p.url}>{p.name}</a> : <strong>{p.name}</strong>}
+              {p.summary && <p class="muted">{p.summary}</p>}
             </li>
           );
         })
