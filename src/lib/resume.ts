@@ -104,13 +104,3 @@ export function groupByEmployer(work: Work[]): Employer[] {
 
   return groups;
 }
-
-// Project names follow the "name - description" convention.
-export function splitProject(project: Project) {
-  const [title, ...rest] = project.name.split(" - ");
-
-  const tagline = rest.join(" - ");
-
-  // With a tagline in the name, the summary is shown as extra details.
-  return { title, description: tagline || project.summary, details: tagline ? project.summary : undefined };
-}
