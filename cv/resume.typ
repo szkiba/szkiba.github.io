@@ -126,8 +126,10 @@
     ..projects.map(p => {
       let (title, ..rest) = p.name.split(" - ")
       let description = if rest.len() > 0 { rest.join(" - ") } else { get(p, "summary") }
+      let details = if rest.len() > 0 { get(p, "summary") } else { none }
       let title = if get(p, "url") != none { link(p.url, title) } else { strong(title) }
-      if description != none [#title -- #description] else { title }
+      let head = if description != none [#title -- #description] else { title }
+      if details != none [#head \ #text(9pt, fill: muted, details)] else { head }
     }),
   )
 ]

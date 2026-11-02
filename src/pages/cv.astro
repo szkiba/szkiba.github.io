@@ -57,11 +57,12 @@ const { basics, work, projects, skills, education, languages, interests } = resu
     <ul class="projects">
       {
         projects.map((p) => {
-          const { title, description } = splitProject(p);
+          const { title, description, details } = splitProject(p);
           return (
             <li>
               {p.url ? <a href={p.url}>{title}</a> : <strong>{title}</strong>}
               {description && <span class="muted"> — {description}</span>}
+              {details && <p class="muted">{details}</p>}
             </li>
           );
         })
