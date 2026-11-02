@@ -1,0 +1,72 @@
+---
+import "../styles/global.css";
+import { resume } from "../lib/resume";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const { basics, work } = resume;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const current = work.find((w) => !w.endDate);
+
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: basics.name,
+  jobTitle: current?.position ?? basics.label,
+  url: basics.url,
+  image: basics.image,
+  sameAs: basics.profiles.map((p) => p.url),
+  ...(current && { worksFor: { "@type": "Organization", name: current.name, url: current.url } }),
+};
+
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/cv/", label: "CV" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={basics.name} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {basics.image && <meta property="og:image" content={basics.image} />}
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json" set:html={JSON.stringify(person)} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">{basics.name}</a>
+      <nav aria-label="Main">
+        {
+          nav.map((item) => (
+            <a href={item.href} aria-current={Astro.url.pathname === item.href ? "page" : undefined}>
+              {item.label}
+            </a>
+          ))
+        }
+        <a href="/resume.pdf">PDF</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} {basics.name}</p>
+    </footer>
+  </body>
+</html>

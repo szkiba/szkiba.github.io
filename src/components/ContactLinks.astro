@@ -1,0 +1,19 @@
+---
+import { resume } from "../lib/resume";
+
+// The phone number is intentionally left out of the website; it is only in the PDF.
+const { email, profiles } = resume.basics;
+---
+
+<ul class="contact-links">
+  {email && <li><a href={`mailto:${email}`}>{email}</a></li>}
+  {
+    profiles.map((p) => (
+      <li>
+        <a href={p.url} rel="me">
+          {p.network}
+        </a>
+      </li>
+    ))
+  }
+</ul>
