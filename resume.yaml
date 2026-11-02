@@ -155,6 +155,7 @@ work:
 projects:
   - name: ini4j - Java API for handling Windows ini file format
     url: https://github.com/ini4j/ini4j
+    summary: My first open source project, started back when SourceForge was the only place to host open source software. I also used it as the homework of a Java training I led for former colleagues at Bonus Online and, as a good teacher should, I did the homework myself.
 
   - name: Production Information System for Kaba Sugar Factory
     summary: 1994-1998, during my last two years in Debrecen and first two years at Bonus. Probably one of the first intranet applications, but at that time the term intranet was not introduced yet.

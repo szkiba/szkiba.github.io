@@ -109,5 +109,8 @@ export function groupByEmployer(work: Work[]): Employer[] {
 export function splitProject(project: Project) {
   const [title, ...rest] = project.name.split(" - ");
 
-  return { title, description: rest.join(" - ") || project.summary };
+  const tagline = rest.join(" - ");
+
+  // With a tagline in the name, the summary is shown as extra details.
+  return { title, description: tagline || project.summary, details: tagline ? project.summary : undefined };
 }
