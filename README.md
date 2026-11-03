@@ -23,4 +23,3 @@ npm run build      # PDF + site into dist/
 Every push to `master` is built and deployed to GitHub Pages by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 Pull requests are built but not deployed.
 
-The repository's **Settings → Pages → Source** must be set to **GitHub Actions**.
