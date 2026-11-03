@@ -4,106 +4,79 @@ basics:
   image: /avatar.png
   label: Staff Software Engineer
   headline: Becoming (a good) programmer is an endless adventure
-  summary: Staff Software Engineer on the Grafana k6 core team, focused on k6 extensions, the extension ecosystem and tooling. Over 25 years of building and architecting backend systems in Go, Java and JavaScript.
+  summary: Over 30 years of building and architecting systems in Go, Java and JavaScript, and leading the teams behind them. Open source maintainer since 2005.
   url: https://ivan.szkiba.hu
-  id: 38bb3b0e-597d-45f8-b272-90bd64df18f8
   email: ivan@szkiba.hu
   location:
     region: Budapest Metropolitan Area
     countryCode: HU
   profiles:
     - network: GitHub
-      username: szkiba
       url: https://github.com/szkiba
     - network: LinkedIn
       url: https://www.linkedin.com/in/szkiba
-      username: szkiba
-    - network: X
-      url: https://x.com/szkiba
-      username: szkiba
 skills:
   - name: Go
-    level: master
-    keywords: []
   - name: JavaScript
-    level: master
-    keywords: []
   - name: TypeScript
-    level: advanced
-    keywords: []
-  - name: k6
-    level: master
-    keywords: []
-  - name: Open source maintainership
-    level: advanced
-    keywords: []
   - name: Java
-    level: advanced
-    keywords: []
-  - name: Microservices
-    level: advanced
-    keywords: []
+  - name: k6
+  - name: Performance testing
+  - name: Open source maintainership
+  - name: Software architecture
+  - name: Technical leadership
   - name: Databases
-    level: advanced
-    keywords: []
-  - name: HTML/CSS
-    level: advanced
-    keywords: []
 work:
   - name: Grafana Labs
     position: Staff Software Engineer
     url: https://www.grafana.com
-    location: Hungary
-    summary: ""
+    location: Hungary (remote)
     startDate: 2023-07-25
     highlights:
-      - Member of the k6 core team
-      - Maintain and evolve the k6 extension ecosystem and tooling
-      - (Go, JavaScript, TypeScript, React, HTML, CSS)
+      - Main contributor to the k6 extension tooling, including xk6, the extension build and lint toolbox, and the extension registry
+      - Contribute to k6 core, including the built-in web dashboard, TypeScript support, subcommand extensions and automatic extension resolution
+      - Maintain official k6 extensions, including xk6-sql and its database drivers, xk6-kafka and xk6-faker (original author)
+      - (Go, JavaScript, TypeScript, HTML, CSS)
   - name: NNG LLC
     position: System Architect
     url: https://www.nng.com
     location: Budapest, Hungary
-    summary: ""
     startDate: 2017-08-01
     endDate: 2023-07-07
     highlights:
-      - System architect of navigation services
-      - Supporting and coaching software architects
-      - Architecting authentication, authorization and licensing related development
-      - Leading by example in software development, automated testing and documentation
-      - Evaluating and selecting technologies
+      - Served as system architect of navigation services, supporting about 30 engineers
+      - Supported and coached software architects
+      - Architected development related to authentication, authorization and licensing
+      - Led by example in software development, automated testing and documentation
+      - Evaluated and selected technologies
       - (Go, JavaScript, Java, HTML, CSS)
   - name: NNG LLC
     position: Head of Cloud Competence Center (interim, concurrent role)
     url: https://www.nng.com
     location: Budapest, Hungary
-    summary: ""
     startDate: 2022-07-01
     endDate: 2023-03-01
     highlights:
       - Led 4 Engineering Managers (4 developer teams, 2 operation teams)
-      - Supporting and coaching Engineering Managers, with emphasis on Software Engineering
+      - Supported and coached Engineering Managers, with emphasis on Software Engineering
       - Supported the recruitment of a successor
   - name: NNG LLC
     position: Lead Software Architect
     url: https://www.nng.com
     location: Budapest, Hungary
-    summary: ""
     startDate: 2014-05-01
     endDate: 2017-07-01
     highlights:
-      - Architect of navigation related Enterprise Java development projects
+      - Architected navigation-related Enterprise Java development projects
       - Led the architecture team (3 Java architects)
-      - Technical leader of 18 Java developers and 3 test automation developers
-      - Evaluated and selected new technologies, made technology related decisions
+      - Provided technical leadership for 18 Java developers and 3 test automation developers
+      - Evaluated and selected new technologies, made technology-related decisions
       - Introduced Continuous Delivery and managed code quality
       - (J2EE, JavaScript, REST, Maven, Struts, Linux, PostgreSQL, Jenkins, Sonar, ANTLR)
   - name: NNG LLC
     position: Head of Platform Development
     url: https://www.nng.com
     location: Budapest, Hungary
-    summary: ""
     startDate: 2007-04-01
     endDate: 2014-04-01
     highlights:
@@ -115,18 +88,16 @@ work:
   - name: Bonus Online Ltd
     position: Head of Development
     location: Budapest, Hungary
-    summary: ""
     startDate: 2001-06-01
     endDate: 2007-03-01
     highlights:
-      - Architect and technical lead of Bonus.com, a popular kids' website in the US
+      - Architect and technical lead of Bonus.com, a high-traffic kids' website in the US serving more than 1,200 requests per second in peak season
       - Led the development team (6-10 Java developers) and the system administrator team (2 Unix administrators)
-      - Designed the system architecture (web, geographic DNS based load balancer, database)
+      - Designed the system architecture (web, geographic DNS-based load balancer, database) running in 4 geographically separate colocation sites in the US
       - (Java Servlets, Tomcat, Apache httpd, MySQL, Struts, JSP, HTML, CSS, JavaScript)
   - name: Bonus Online Ltd
     position: Lead Software Developer
     location: Budapest, Hungary
-    summary: ""
     startDate: 1998-03-01
     endDate: 2001-05-01
     highlights:
@@ -136,7 +107,6 @@ work:
   - name: Bonus Online Ltd
     position: Software Developer and Unix System Administrator
     location: Budapest, Hungary
-    summary: ""
     startDate: 1996-09-01
     endDate: 1998-02-01
     highlights:
@@ -147,21 +117,40 @@ work:
     position: Assistant lecturer
     url: https://unideb.hu/en
     location: Debrecen, Hungary
-    summary: ""
     startDate: 1991-08-01
     endDate: 1996-08-01
     highlights:
-      - Taught programming languages (C/C++ and x86 assembly), object oriented programming and computer networks for programmers
+      - Taught programming languages (C/C++ and x86 assembly), object-oriented programming and computer networks for programmers
 projects:
+  - name: xk6-dashboard - A dashboard for visualizing k6 performance test results
+    url: https://github.com/szkiba/xk6-dashboard
+    summary: Original author (2021) of the web dashboard that was later embedded in Grafana k6. Shows live test metrics in the browser and exports self-contained HTML reports that work offline. Over 450 GitHub stars.
+
+  - name: xk6-faker - Random fake data generator for k6
+    url: https://github.com/szkiba/xk6-faker
+    summary: Original author (2021), now hosted in the Grafana organization as an official extension. Written in Go, so tests start faster and use less memory, with an API modeled on Faker.js. Over 100 GitHub stars.
+
+  - name: k6x - Run k6 with extensions as easy as possible
+    url: https://github.com/szkiba/k6x
+    summary: Launcher that detects which extensions a k6 test script needs, builds and caches a custom k6 binary and runs it, as a drop-in replacement for the k6 command. A predecessor to k6's built-in automatic extension resolution.
+
+  - name: mdcode - A tool for handling Markdown code blocks
+    url: https://github.com/szkiba/mdcode
+    summary: Keeps code in Markdown documentation testable. Extracts code blocks to files, updates them from the edited sources and runs commands on them, so examples can be developed with normal tools in any language.
+
   - name: ini4j - Java API for handling Windows ini file format
     url: https://github.com/ini4j/ini4j
-    summary: Since 2005. My first open source project, started back when SourceForge was the only place to host open source software. I also used it as the homework of a Java training I led for former colleagues at Bonus Online and, as a good teacher should, I did the homework myself.
+    summary: Since 2005. My first open source project, started back when SourceForge was the only place to host open source software. Now on GitHub and released on Maven Central.
+
+  - name: cdo - Markdown-based task runner for contributors
+    url: https://github.com/szkiba/cdo
+    summary: Task runner that reads its tasks from the code blocks in a project's CONTRIBUTING.md or README.md, so contributors run the documented steps (lint, build and so on) with one command. An embedded shell makes tasks behave the same on every OS.
 
   - name: Production Information System for Kaba Sugar Factory
-    summary: 1994-1998, during my last two years in Debrecen and first two years at Bonus. Probably one of the first intranet applications, but at that time the term intranet was not introduced yet.
+    summary: 1994-1998. Probably one of the first intranet applications, but at that time the term intranet was not introduced yet.
 education:
   - institution: University of Debrecen
-    studyType: Bachelor's Degree, Computer Programming
+    studyType: Bachelor's Degree, Computer Programming (in parallel with the MSc)
     url: https://unideb.hu/en
     startDate: 1988-09-01
     endDate: 1991-06-01
@@ -175,11 +164,7 @@ languages:
     fluency: fluent
   - language: Hungarian
     fluency: native speaker
-publications: []
-volunteer: []
-awards: []
 interests:
   - name: Blues music
   - name: Playing the harmonica
   - name: Hiking
-references: []
